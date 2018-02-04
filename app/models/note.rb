@@ -1,3 +1,3 @@
 class Note < ApplicationRecord
-    validates :title, :color, :body presence: true
+    validates :title, :color, :body, presence: true
 end
