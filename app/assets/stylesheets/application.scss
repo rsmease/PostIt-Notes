@@ -4,6 +4,7 @@
 @import 'utils/mixins.scss';
 //components
 @import 'components/header_add_note.scss';
+@import 'components/note_index.scss';
 #root {
     @include flex(column, center, center);
 }

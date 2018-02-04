@@ -8,4 +8,7 @@ import NoteIndex from './note_index';
 const mapStateToProps = (state, ownProps) => {
     return {};
 };
-export default (connect(null, null)(NoteIndex));
+const mapDispatchToProps = (dispatch) => {
+    return {};
+};
+export default connect(mapStateToProps, mapDispatchToProps)(NoteIndex);
