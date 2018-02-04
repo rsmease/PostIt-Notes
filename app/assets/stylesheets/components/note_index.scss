@@ -1,5 +1,14 @@
 .note-index-container {
     width: 100vw;
-    height: calc(100vh - 80px);
+    padding: 40px 0px;
+    min-height: calc(100vh - 80px);
     background-color: $off-white;
+    @include flex(row, flex-start, center);
+}
+
+.notes-index-container-elements {
+    width: calc(100vw - 160px);
+    @include flex(row, flex-start, flex-start);
+    flex-wrap: wrap;
+    margin: -10px;
 }

@@ -1,0 +1,62 @@
+.note-index-item-container {
+    @include card-defaults;
+    margin-bottom: 40px;
+    height: 240px;
+    width: 300px;
+    margin: 10px;
+}
+
+.note-index-item-header {
+    height: 60px;
+    border-bottom: 2px solid $off-white;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    @include flex(row, center, center);
+}
+
+.note-index-item-header-elements {
+    width: 90%;
+    @include flex(row, center, space-between);
+}
+
+.note-pink {
+    border-top: 6px solid $pink;
+}
+
+.note-green {
+    border-top: 6px solid $green;
+}
+
+.note-blue {
+    border-top: 6px solid $blue-light;
+}
+
+.note-yellow {
+    border-top: 6px solid $yellow;
+}
+
+.note-title {
+    font-size: $subtitle;
+    font-weight: 100;
+    color: $gray-dark;
+}
+
+.note-tools {
+    @include flex(row, center, center)
+}
+
+.note-tools-icon {
+    color: $gray-lightest;
+    margin-left: 5px;
+    @include transition-ease(color);
+}
+
+.note-tools-icon:hover {
+    color: $blue-dark;
+}
+
+.note-index-item-body {
+    font-size: $body;
+    color: $gray-light;
+    padding: 10px;
+}

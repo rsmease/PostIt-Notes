@@ -1,6 +1,7 @@
 import * as RailsAPI from '../rails_api/NOTEs_api';
 
 export const RECEIVE_NOTE = 'RECEIVE_NOTE';
+export const RECEIVE_ALL_NOTES = 'RECEIVE_NOTES';
 export const RECEIVE_NOTE_FORM_ERRORS = 'RECEIVE_NOTE_FORM_ERRORS';
 export const REMOVE_NOTE_FORM_ERRORS = 'REMOVE_NOTE_FORM_ERRORS';
 export const REMOVE_NOTE = 'REMOVE_NOTE';
@@ -8,6 +9,11 @@ export const REMOVE_NOTE = 'REMOVE_NOTE';
 const receiveNote = (note) => ({
     type: RECEIVE_NOTE,
     note: note
+});
+
+const receiveAllNotes = (notes) => ({
+    type: RECEIVE_ALL_NOTES,
+    notes
 });
 
 const removeNote = (note) => ({
@@ -23,6 +29,10 @@ const receiveNoteFormErrors = (errors) => ({
 const removeNoteFormErrors = () => ({
     type: REMOVE_NOTE_FORM_ERRORS
 });
+
+export const requestAllNotes = () => (dispatch) =>
+    RailsAPI.fetchNotes().then(foundNotes =>
+        dispatch(receiveAllNotes(foundNotes)));
 
 export const requestNoteById = (noteId) => (dispatch) =>
     RailsAPI.fetchNoteById(noteId).then(foundNote =>

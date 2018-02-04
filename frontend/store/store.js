@@ -11,5 +11,5 @@ import rootReducer from '../reducers/root_reducer';
 import thunk from './thunk';
 
 export default () => createStore(
-    rootReducer, composeWithDevTools(applyMiddleware(thunk))
+    rootReducer, composeWithDevTools(applyMiddleware(thunk, logger))
 );

@@ -2,9 +2,11 @@
 @import 'utils/fonts.scss';
 @import 'utils/colors.scss';
 @import 'utils/mixins.scss';
+@import 'utils/reset.scss';
 //components
 @import 'components/header_add_note.scss';
 @import 'components/note_index.scss';
+@import 'components/note_index_item.scss';
 #root {
     @include flex(column, center, center);
 }
