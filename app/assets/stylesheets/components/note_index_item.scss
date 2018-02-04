@@ -2,7 +2,7 @@
     @include card-defaults;
     margin-bottom: 40px;
     height: 240px;
-    width: 300px;
+    width: 280px;
     margin: 10px;
 }
 
@@ -15,7 +15,7 @@
 }
 
 .note-index-item-header-elements {
-    width: 90%;
+    width: calc(100% - 20px);
     @include flex(row, center, space-between);
 }
 
@@ -58,5 +58,6 @@
 .note-index-item-body {
     font-size: $body;
     color: $gray-light;
+    overflow: scroll;
     padding: 10px;
 }

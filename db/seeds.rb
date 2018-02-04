@@ -21,7 +21,7 @@ def get_random_body
     5.times do 
         random_list.push(Faker::Commerce.product_name)
     end
-    random_list.join("/n")
+    random_list.join(", ")
 end
 
 note1 = Note.create(title: get_random_title, color: get_random_color, body: get_random_body)
