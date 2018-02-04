@@ -15,8 +15,11 @@
  */
 
 //utils
-@import './utils/fonts';
-@import './utils/colors';
-@import './utils/mixins';
+@import 'utils/fonts.scss';
+@import 'utils/colors.scss';
+@import 'utils/mixins.scss';
 //components
-@import './components/header_add_note';
+@import 'components/header_add_note.scss';
+#root {
+    @include flex(column, center, center);
+}

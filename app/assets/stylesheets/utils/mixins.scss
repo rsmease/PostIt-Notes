@@ -1,0 +1,33 @@
+@mixin flex($direction, $align, $justify) {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction
+}
+
+@mixin modal-position {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+@mixin transition-ease($property) {
+    -webkit-transition: $property 300ms ease-in;
+    -moz-transition: $property 300ms ease-in;
+    -ms-transition: $property 300ms ease-in;
+    -o-transition: $property 300ms ease-in;
+    transition: $property 300ms ease-in;
+}
+
+@mixin card-defaults {
+    background: $winter-white;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+}

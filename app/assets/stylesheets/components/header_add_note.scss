@@ -1,7 +1,31 @@
-.header-add-note {}
+.header-add-note {
+    height: 50px;
+    background-color: $gray-dark;
+    width: 100vw;
+    padding: 10vw;
+    @include flex(row, center, space-between);
+}
 
-.placeholder-logo {}
+.placeholder-logo {
+    height: 30px;
+    width: 70px;
+    background-color: $gray-light;
+}
 
-.button-add-note {}
+;
+.button-add-note {
+    height: 30px;
+    width: 60px;
+    border-radius: 3px;
+    background-color: $blue-light;
+    color: $white;
+    @include transition-ease(background-color);
+}
 
-.button-add-note:hover {}
+.button-add-note:hover {
+    color: $blue-lightest;
+}
+
+.button-add-note-icon {
+    color: $white;
+}
