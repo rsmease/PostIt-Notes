@@ -13,3 +13,10 @@
  *= require_tree .
  *= require_self
  */
+
+//utils
+@import './utils/fonts';
+@import './utils/colors';
+@import './utils/mixins';
+//components
+@import './components/header_add_note';
