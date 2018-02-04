@@ -8,7 +8,7 @@ import {
 import logger from 'redux-logger';
 
 import rootReducer from '../reducers/root_reducer';
-import thunk from '.thunk';
+import thunk from './thunk';
 
 export default () => createStore(
     rootReducer, composeWithDevTools(applyMiddleware(thunk))
