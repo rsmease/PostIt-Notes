@@ -106,7 +106,7 @@ section {
 body {
     line-height: 1;
     height: 100%;
-    font-family: $roboto
+    font-family: $roboto;
 }
 
 ol,
@@ -130,4 +130,25 @@ q:after {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+
+button {
+    cursor: pointer;
+    outline: 0;
+}
+
+button:active,
+button:focus,
+input:active,
+input:focus,
+textarea:focus,
+textarea:active {
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-image: none;
+}
+
+input {
+    border: none;
 }

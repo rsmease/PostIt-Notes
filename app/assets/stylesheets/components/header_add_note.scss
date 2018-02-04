@@ -1,31 +1,45 @@
-.header-add-note {
-    height: 50px;
+.main-header {
+    height: 80px;
     background-color: $gray-dark;
     width: 100vw;
-    padding: 10vw;
+    @include flex(row, center, center);
+}
+
+.main-header-elements {
+    width: 90vw;
     @include flex(row, center, space-between);
 }
 
 .placeholder-logo {
-    height: 30px;
-    width: 70px;
+    height: 40px;
+    width: 150px;
     background-color: $gray-light;
 }
 
-;
-.button-add-note {
-    height: 30px;
-    width: 60px;
+.add-note-button {
+    height: 40px;
+    width: 150px;
     border-radius: 3px;
-    background-color: $blue-light;
+    background-color: $blue-dark;
+    border-color: $blue-dark;
     color: $white;
-    @include transition-ease(background-color);
+    @include transition-ease(all);
+    @include flex(row, center, center);
 }
 
-.button-add-note:hover {
-    color: $blue-lightest;
+.button-text {
+    font-size: $subtitle;
+    font-weight: 100;
+    color: $white;
 }
 
-.button-add-note-icon {
+.add-note-button:hover {
+    background-color: $blue-lightest;
+    border-color: $blue-lightest;
+}
+
+.add-note-button-icon {
     color: $white;
+    font-size: $title;
+    margin-right: 5px;
 }

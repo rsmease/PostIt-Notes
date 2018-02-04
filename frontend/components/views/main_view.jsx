@@ -3,8 +3,8 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 //components
-import HeaderAddNote from '../headers/header_add_note';
+import MainHeader from '../headers/main_header';
 
 export default () => (
-    <HeaderAddNote />
+    <MainHeader />
 );

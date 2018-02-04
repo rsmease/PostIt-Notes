@@ -3,9 +3,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 //component views
-import ViewMain from './components/views/view_main';
+import MainView from './components/views/main_view';
 
 document.addEventListener('DOMContentLoaded', () => {
     const root = document.getElementById('root');
-    ReactDOM.render(<ViewMain />, root);
+    ReactDOM.render(<MainView />, root);
 });
