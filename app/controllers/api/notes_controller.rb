@@ -9,6 +9,11 @@ class Api::NotesController < ApplicationController
         render 'api/notes/index'
     end
     
+    def show
+        @note = Note.find(params[:id])
+        render 'api/notes/show'
+    end
+    
     def create
         @note = Note.new(note_params)
         if @note.save
@@ -27,7 +32,7 @@ class Api::NotesController < ApplicationController
         end
     end
     
-    def delete
+    def destroy
         @note = Note.find(params[:id])
         if @note.destroy
             render 'api/notes/show'
