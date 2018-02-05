@@ -16,7 +16,7 @@ class NoteIndex extends React.Component {
     showNotes() {
         if (this.props.notes.length) {
             return this.props.notes.map(note => (
-                <NoteIndexItem note={note} />
+                <NoteIndexItem note={note} key={note.id} />
             ));
         }
     }

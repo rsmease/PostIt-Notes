@@ -35,6 +35,10 @@
     border-top: 6px solid $yellow;
 }
 
+.big-border {
+    border-top-width: 8px;
+}
+
 .note-title {
     font-size: $subtitle;
     font-weight: 100;
@@ -59,5 +63,6 @@
     font-size: $body;
     color: $gray-light;
     overflow: scroll;
+    height: 140px;
     padding: 10px;
 }

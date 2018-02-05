@@ -4,9 +4,10 @@
 @import 'utils/mixins.scss';
 @import 'utils/reset.scss';
 //components
-@import 'components/header_add_note.scss';
+@import 'components/header.scss';
 @import 'components/note_index.scss';
 @import 'components/note_index_item.scss';
+@import 'components/note_modal.scss';
 #root {
     @include flex(column, center, center);
 }

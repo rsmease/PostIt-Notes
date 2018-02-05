@@ -1,5 +1,9 @@
+//utils
 import React from 'react';
 import * as MaterialDesign from 'react-icons/lib/md';
+
+//components
+import NoteTools from './note_tools';
 
 class NoteIndexItem extends React.Component {
     constructor(props) {
@@ -11,15 +15,12 @@ class NoteIndexItem extends React.Component {
                 <header className={`note-index-item-header note-${this.props.note.color}`}>
                     <div className='note-index-item-header-elements'>
                         <span className='note-title'>{this.props.note.title}</span>
-                        <div className='note-tools'>
-                            <MaterialDesign.MdCreate className='note-tools-icon' />
-                            <MaterialDesign.MdDelete className='note-tools-icon' />
-                        </div>
+                        <NoteTools note={this.props.note} />
                     </div>
                 </header>
-                <section className='note-index-item-body'>
+                <div className='note-index-item-body'>
                     {this.props.note.body}
-                </section>
+                </div>
             </div>
         );
     }

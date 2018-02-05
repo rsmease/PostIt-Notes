@@ -23,7 +23,6 @@
     background-color: $blue-dark;
     border-color: $blue-dark;
     color: $white;
-    @include transition-ease(all);
     @include flex(row, center, center);
 }
 
@@ -31,11 +30,6 @@
     font-size: $button;
     font-weight: 100;
     color: $white;
-}
-
-.add-note-button:hover {
-    background-color: $blue-lightest;
-    border-color: $blue-lightest;
 }
 
 .add-note-button-icon {
