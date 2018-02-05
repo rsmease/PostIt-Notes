@@ -1,9 +1,12 @@
 {
   "name": "post-it-notes",
   "private": true,
+  "engines": {
+    "node": "4.1.1",
+    "npm": "2.1.x"
+  },
   "scripts": {
-    "server": "rails s",
-    "webpack": "webpack --watch"
+    "postinstall": "webpack"
   },
   "dependencies": {
     "babel-core": "^6.26.0",
