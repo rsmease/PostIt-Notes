@@ -1,4 +1,4 @@
-import * as RailsAPI from '../rails_api/NOTEs_api';
+import * as RailsAPI from '../rails_api/notes_api';
 
 export const RECEIVE_NOTE = 'RECEIVE_NOTE';
 export const RECEIVE_ALL_NOTES = 'RECEIVE_NOTES';

@@ -95,6 +95,22 @@
     width: 480px;
 }
 
+.title-input::-webkit-input-placeholder {
+    font-style: italic;
+}
+
+.title-input::-moz-placeholder {
+    font-style: italic;
+}
+
+.title-input::-moz-placeholder {
+    font-style: italic;
+}
+
+.title-input::-ms-input-placeholder {
+    font-style: italic;
+}
+
 .body-input {
     overflow: scroll;
     color: $gray-light;
